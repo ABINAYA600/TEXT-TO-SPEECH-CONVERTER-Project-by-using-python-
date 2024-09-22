@@ -1,0 +1,20 @@
+import gtts
+from gtts import gTTS
+import os
+
+
+text = "Hello guys ! This is my  Sixth project in  python "
+
+
+language = 'en'
+
+tts = gTTS(text = text , lang= language , slow = False)
+
+
+tts.save("project description.mp3")
+
+
+os.system("start project descriptiom.mp3")
+
+print("text is converted into speech")
+
